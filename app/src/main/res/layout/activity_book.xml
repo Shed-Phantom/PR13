@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartScreen">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bookback" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:background="@drawable/round_button"
+        android:backgroundTint="#2A2E43">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="23dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="36dp"
+            android:layout_marginBottom="20dp">
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:background="@drawable/fullround"
+                android:backgroundTint="#353A50"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="left">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/icons8_fiat_500_filled_50" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kia Rio"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="8sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:background="@drawable/fullround"
+                android:backgroundTint="#353A50"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="30sp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/icons8_sewing_tape_measure_50" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1.5 km"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="8sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:background="@drawable/fullround"
+                android:backgroundTint="#454F63"
+                android:orientation="vertical"
+                android:layout_gravity="right"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/icons8_deceleration_of_runner_50" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5 min - free"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="8sp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price:"
+            android:layout_marginHorizontal="23sp"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="23dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40sp">
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:background="@drawable/fullround"
+                android:backgroundTint="#FFB900"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="left">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Minute"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1 min - 1$"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="8sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:background="@drawable/fullround"
+                android:backgroundTint="#353A50"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="30sp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hour"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="60 min - $50"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="8sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:background="@drawable/fullround"
+                android:backgroundTint="#353A50"
+                android:orientation="vertical"
+                android:layout_gravity="right"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Day"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8sp"
+                    android:text="1440 min - $300"
+                    android:textSize="12dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="52sp"
+            android:layout_marginHorizontal="23sp"
+            android:background="@drawable/fullround"
+            android:layout_marginBottom="16dp"
+            android:text="book"/>
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
